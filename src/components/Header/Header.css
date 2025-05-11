@@ -1,0 +1,19 @@
+header {
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a.active {
+  color: #007bff;
+  font-weight: bold;
+}
