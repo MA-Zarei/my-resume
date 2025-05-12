@@ -58,6 +58,7 @@ const Background = () => {
     <>
       <div className="background" ref={backgroundRef}></div>
       <div className="blur-overlay"></div>
+      
     </>
   )
 }

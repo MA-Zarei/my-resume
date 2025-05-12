@@ -1,5 +1,5 @@
 .root-layout{
-    background-color: wheat;
+    /* background-color: wheat; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .template{
-    background-color: white;
+    /* background-color: white; */
     border: 1px solid black;
     width: 100%;
     height: 100%;
