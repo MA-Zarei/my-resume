@@ -1,11 +1,17 @@
+import { NavLink } from 'react-router-dom'
+import { Squeeze as Hamburger } from 'hamburger-react'
 import './Menu.css'
+import { useState } from 'react'
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header>
-      <p className='name'>M. Amin Zarei</p>
-      <p className='job'>Webmaster & Front-End Developer</p>
-    </header>
+    <div className={`menu-wrapper ${isOpen ? 'menu-wrapper-expand' : ''}`}>
+      <div className= 'square'>
+        <Hamburger  toggled={isOpen} toggle={setIsOpen} color={isOpen ? '#fff' : '#000'}/>
+      </div>
+    </div>
   )
 }
 
