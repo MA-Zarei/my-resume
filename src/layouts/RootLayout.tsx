@@ -6,13 +6,11 @@ import Background from "../components/Background/Background";
 const RootLayout = () => {
   return (
     <div className="root-layout">
-      <div className="template">
-        <Header />
-        <Background />
-        <main>
-          <Outlet />
-        </main>
-      </div>
+      <Header />
+      <Background />
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 };

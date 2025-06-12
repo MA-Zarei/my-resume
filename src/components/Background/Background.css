@@ -1,43 +1,17 @@
-.background {
+.bg-layout{
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  z-index: -1;
-  mask: linear-gradient(to right,
-  transparent 80px,
-  #000 80px calc(100% - 80px),
-  transparent calc(100% - 80px)
-),
-linear-gradient(to bottom,
-  transparent 80px,
-  #000 80px calc(100% - 80px),
-  transparent calc(100% - 80px)
-);
-mask-composite: intersect;
+  padding: 0px 5%;
+  box-sizing: border-box;
+  border: 10px solid brown;
+  background-color: rgba(255,255,255,1);
+  z-index: -99;
 }
-
-.blur-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.bg-lines{
   height: 100vh;
-  backdrop-filter: blur(50px);
-  background: rgba(228, 228, 227, 0.6);
-  z-index: -1;
-  transition: backdrop-filter 4s ease-in-out;
-}
-
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  background-color: black;
-  width: 1px;
-  height: 1px;
-  opacity: 1;
-  transition: transform 6s ease-in-out, top 6s linear, left 6s linear,
-    opacity 3s ease-out;
+  width: 2px;
+  background-color: #f3f3f3;
 }

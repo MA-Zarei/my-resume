@@ -3,13 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-.template{
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
-    padding: 0px;
+    border: 1px solid blue;
 }

@@ -1,12 +1,10 @@
-import { NavLink } from 'react-router-dom'
-import Menu from '../Menu/Menu'
-import './Header.css'
+import './Menu.css'
 
 const Header = () => {
   return (
     <header>
       <p className='name'>M. Amin Zarei</p>
-      <Menu />
+      <p className='job'>Webmaster & Front-End Developer</p>
     </header>
   )
 }
