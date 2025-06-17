@@ -1,7 +1,7 @@
 .menu-wrapper {
     position: absolute;
     top: 16px;
-    right: 5%;
+    right: 0;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -115,17 +115,15 @@
         & .first-line {
             text-transform: capitalize;
             font-weight: 500;
-            & .first-line {
-                position: relative;
-                width: 24px;
-                height: 24px;
-            }
+            font-size: 1em;
         }
         & .second-line {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 10px;
+            text-transform: capitalize;
+            font-size: 0.95em;
             & p {
                 white-space: nowrap;
             }

@@ -3,6 +3,7 @@ import { Squeeze as Hamburger } from 'hamburger-react'
 import './Menu.css'
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence, easeInOut } from 'framer-motion';
+import {texts} from '../../Constants/texts.ts'
 
 const SECTION_EXIT_DURATION = 800; // ms, adjust to match your section exit animation
 
@@ -104,6 +105,7 @@ const Header: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.3 } }}
             exit={{ opacity: 0, transition: { duration: 0.3 } }}
+            onClick={()=>setIsOpen(!isOpen)}
           />
         )}
       </AnimatePresence>
@@ -169,11 +171,11 @@ const Header: React.FC = () => {
                       exit="exit"
                     >
                       <motion.div className='first-part' variants={itemVariants}>
-                        <a href="mailto:myemail@gmail.com">myemail@gmail.com</a>
+                        <a href="mailto:myemail@gmail.com" target='_blank' rel='nofollow'>myemail@gmail.com</a>
                         <p>
                           <span>
                             My &nbsp;
-                            <a href="#">Resume</a> | <a href="#">CV</a> | <a href="#">Github</a>
+                            <a href="#">Resume</a> | <a href="#">CV</a> | <a href="https://github.com/MA-Zarei" target='_blank'>Github</a>
                           </span>
                         </p>
                       </motion.div>
@@ -186,7 +188,7 @@ const Header: React.FC = () => {
                             <div className="pulse-core" />
                           </div>
                           <p>
-                            Fully booked till further notice
+                            {texts.availability}
                           </p>
                         </div>
                       </motion.div>
