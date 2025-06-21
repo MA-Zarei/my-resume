@@ -4,6 +4,7 @@ import './Menu.css'
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence, easeInOut } from 'framer-motion';
 import {texts} from '../../Constants/texts.ts'
+import Overlay from '../Overlay/Overlay.tsx';
 
 const SECTION_EXIT_DURATION = 800; // ms, adjust to match your section exit animation
 
@@ -68,6 +69,7 @@ const Header: React.FC = () => {
   // Handle open/close logic
   useEffect(() => {
     if (isOpen) {
+      document.body.style.overflow = 'hidden';
       setHamburgerColor('#fff'); // Set to white immediately on open
       setShowMenu(true);
       setIsExitingSections(false);
@@ -75,6 +77,7 @@ const Header: React.FC = () => {
       setIsExitingSections(true);
       colorTimeout.current = setTimeout(() => {
         setHamburgerColor('#000');
+        document.body.style.overflow = '';
       }, SECTION_EXIT_DURATION + 700);
       closeTimeout.current = setTimeout(() => {
         setShowMenu(false);
@@ -100,13 +103,7 @@ const Header: React.FC = () => {
     <>
       <AnimatePresence>
         {showMenu && (
-          <motion.div
-            className="overlayer"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.3 } }}
-            exit={{ opacity: 0, transition: { duration: 0.3 } }}
-            onClick={()=>setIsOpen(!isOpen)}
-          />
+          <Overlay onClick={()=>setIsOpen(!isOpen)} />
         )}
       </AnimatePresence>
       <motion.div className='menu-wrapper'>
@@ -188,7 +185,7 @@ const Header: React.FC = () => {
                             <div className="pulse-core" />
                           </div>
                           <p>
-                            {texts.availability}
+                            {texts.widgets.availability}
                           </p>
                         </div>
                       </motion.div>

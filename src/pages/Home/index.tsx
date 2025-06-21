@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import "./Home.css"
 import { texts } from "../../Constants/texts"
 
@@ -25,7 +25,7 @@ const Home = () => {
               <div className="pulse-core" />
               </div>
             <p>
-              {texts.availability}
+              {texts.widgets.availability}
             </p></div>
         </div>
       </div>

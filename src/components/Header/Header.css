@@ -1,18 +1,27 @@
-header{
-  position: fixed;
-  width: 90%;
-  height: 80px;
-  align-self: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin: 24px 0;
-  box-sizing: border-box;
+header {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 80px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 24px 0;
+    box-sizing: border-box;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
 }
 
-.name{
-  font-size: 2em;
-  font-weight: 400;
+.glassBG {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px) saturate(180%);
+}
+
+.name {
+    font-size: 2em;
+    font-weight: 400;
 }

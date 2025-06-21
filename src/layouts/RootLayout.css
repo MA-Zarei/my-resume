@@ -1,5 +1,6 @@
 .root-layout{
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -7,12 +8,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 main{
     margin-top: 144px;
-    overflow: hidden;
+    /* position: absolute; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    /* border: 1px solid blue; */
+    padding-bottom: 80px;
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: fit-content;
+    z-index: 0;
+    *{
+        z-index: 0 !important;
+    }
 }

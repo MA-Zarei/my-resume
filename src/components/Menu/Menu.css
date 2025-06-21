@@ -5,7 +5,7 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    z-index: 20;
+    z-index: 21;
     & a {
         text-decoration: none;
         color: inherit;
@@ -19,10 +19,6 @@
 }
 
 @media (max-width: 500px) {
-    /* .menu-wrapper-expand {
-        width: 90vw !important;
-        height: 50vh !important;
-    } */
     .bot-section {
         flex-direction: column !important;
         gap: 32px;
@@ -185,18 +181,6 @@
         transform: translate(-50%, -50%) scale(3);
         opacity: 0;
     }
-}
-
-.overlayer {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(2px) saturate(180%);
-    z-index: 19;
-    animation: fadeIn 0.3s ease-in-out;
 }
 
 @keyframes fadeIn {

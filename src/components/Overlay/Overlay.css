@@ -1,0 +1,11 @@
+.overlayer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px) saturate(180%);
+    z-index: 19;
+    animation: fadeIn 0.3s ease-in-out;
+}
