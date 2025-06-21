@@ -4,6 +4,12 @@ import JavaScriptIcon from "../assets/icons/javascript icon.svg";
 import ReactJs from "../assets/icons/react icon.svg"
 import WordPress from "../assets/icons/wordpress icon.svg"
 import Git from "../assets/icons/git icon.svg"
+import OmajShop from "../assets/icons/works/omajshop.png"
+import NamatabShop from "../assets/icons/works/namatabshop.webp"
+import CoverZhilo from "../assets/icons/works/coverzhilo.svg"
+import Zhilo from "../assets/icons/works/Zhilo.png"
+import ArioTV from "../assets/icons/works/ariotv.webp"
+
 
 type Texts = {
     widgets: {
@@ -20,6 +26,10 @@ type Texts = {
             description: string,
             email: [string, string],
         },
+    }
+    works: {
+        description: string,
+        sites: [string, string, string, string ,string][],
     }
 };
 export const texts: Texts = {
@@ -45,7 +55,17 @@ export const texts: Texts = {
         },
         contact: {
             description: "The best way to reach me right now is via email. Whether you have a project in mind or just want to connect, feel free to get in touch:",
-            email: ["zarei[dot]mohammad[dot]am[at]gmail[dot]com","zarei.mohammad.am@gmail.com"],
-        }
+            email: ["zarei[dot]mohammad[dot]am[at]gmail[dot]com", "zarei.mohammad.am@gmail.com"],
+        },
+    },
+    works: {
+        description: "Each project speaks louder than words, Scroll through and experience them for yourself.",
+        sites: [
+            [ArioTV, 'ario TV - streaming platform', 'wordpress implementer', 'completed', 'https://omajshop.com'],
+            [OmajShop, 'omaj food inc. - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://omajshop.com'],
+            [NamatabShop, 'namatab co. - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://namatabshop.ir'],
+            [CoverZhilo, 'cover zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'under redesign', 'https://coverzhilo.ir'],
+            [Zhilo, 'zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'initial version launched', 'http://zhilo.co'],
+        ]
     }
 };
