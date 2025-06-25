@@ -4,7 +4,7 @@
     justify-content: flex-start;
     text-align: left;
     height: fit-content;
-    width: calc(100svw - 10%);
+    width: calc(98.1svw - 10%);
     box-sizing: border-box;
     padding: 0;
     * {
@@ -16,6 +16,9 @@
         margin-bottom: 16px;
         height: 60px;
         font-size: 3.2em;
+    }
+    & .works-description {
+        line-height: 1.6em;
     }
     & .work-cards {
         width: 100%;
@@ -35,6 +38,8 @@
         padding: 8px 16px;
         border: 1px solid #bebebe;
         border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(1.5px) saturate(180%);
         & .site-logo {
             max-height: 8em;
             max-width: 25%;

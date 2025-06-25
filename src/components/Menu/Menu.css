@@ -1,7 +1,7 @@
 .menu-wrapper {
     position: absolute;
-    top: 16px;
-    right: 0;
+    top: 40px;
+    right: 0px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;

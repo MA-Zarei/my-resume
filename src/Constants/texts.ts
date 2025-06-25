@@ -29,7 +29,7 @@ type Texts = {
     }
     works: {
         description: string,
-        sites: [string, string, string, string ,string][],
+        sites: [string, string, string, string, string][],
     }
 };
 export const texts: Texts = {
@@ -59,7 +59,7 @@ export const texts: Texts = {
         },
     },
     works: {
-        description: "Each project speaks louder than words, Scroll through and experience them for yourself.",
+        description: "This section features a curated selection of projects I’ve designed and implemented—born from real needs, shaped with user experience and aesthetics in mind. Instead of describing them in words, I’ve chosen to let each project speak for itself—just like moonlight, seen only when it touches the ground.",
         sites: [
             [ArioTV, 'ario TV - streaming platform', 'wordpress implementer', 'completed', 'https://omajshop.com'],
             [OmajShop, 'omaj food inc. - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://omajshop.com'],

@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import './Works.css'
 import { texts } from "../../Constants/texts"
 import OpenIcon from '../../assets/icons/open icon.svg'
+// import { Tooltip } from "../../components/Tooltip/Tooltip"
 
 const Works = () => {
   return (
@@ -17,7 +18,6 @@ const Works = () => {
             <img src={para[0]} className="site-logo" />
             <div className="work-content">
               <p className="heading">{para[1]}</p>
-              {/* <p className="text">{para[1]}</p> */}
               <p className="heading">my role</p>
               <p className="text">{para[2]}</p>
               <p className="heading">Project Status</p>

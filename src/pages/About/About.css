@@ -4,7 +4,7 @@
     justify-content: space-between;
     gap: 80px;
     height: fit-content;
-    width: calc(100svw - 10%);
+    width: calc(99svw - 10%);
     box-sizing: border-box;
     padding: 0;
     * {

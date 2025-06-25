@@ -62,6 +62,8 @@
     flex-wrap: nowrap;
     gap: 10px;
     margin-top: auto;
+    width: fit-content;
+    margin-left: auto;
 }
 
 .notice {
@@ -151,7 +153,7 @@
     }
 }
 @media (max-width: 499px) {
-    .home{
+    .home {
         flex-direction: column;
     }
     .first-name,
@@ -159,21 +161,22 @@
         font-size: 6em;
         text-align: center;
     }
-    .description{
+    .description {
         text-align: center;
     }
     .left-col {
         width: 100%;
+        padding-top: 80px;
     }
     .right-col {
         padding-left: 0%;
         width: 100%;
     }
-    .brief{
+    .brief {
         top: 40%;
         transform: unset;
     }
-    .freelance{
+    .freelance {
         justify-content: end;
         width: fit-content;
         align-self: flex-end;
