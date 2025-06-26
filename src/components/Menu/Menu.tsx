@@ -123,8 +123,8 @@ const Header: React.FC = () => {
                 height: '416px',
                 transition: {
                   backgroundColor: { duration: 0.3 },
-                  width: { delay: 0.3, duration: 0.5, ease: 'easeInOut' },
-                  height: { delay: 0.3, duration: 0.5, ease: 'easeInOut' },
+                  width: { delay: 0.3, duration: 0.5, ease: [0.6,0.04,0.64,0.42] },
+                  height: { delay: 0.3, duration: 0.5, ease: [0.6,0.04,0.64,0.42] },
                 },
               }}
               exit={{
@@ -132,8 +132,8 @@ const Header: React.FC = () => {
                 height: '48px',
                 backgroundColor: 'rgba(0,0,0,0)',
                 transition: {
-                  width: { duration: 0.5, ease: 'easeInOut' },
-                  height: { duration: 0.5, ease: 'easeInOut' },
+                  width: { duration: 0.5, ease: [0.6,0.04,0.64,0.42] },
+                  height: { duration: 0.5, ease: [0.6,0.04,0.64,0.42] },
                   backgroundColor: { delay: 0.5, duration: 0.3 },
                 },
               }}

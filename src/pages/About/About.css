@@ -58,13 +58,13 @@
         flex-wrap: wrap;
     }
     & .card {
-        width: 80px;
+        width: 80px !important;
         height: 100px;
         box-sizing: border-box;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
         margin: 0 auto;
     }

@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import DynamicPage from './pages/[slug]/page'
 import Works from './pages/Works'
 import About from './pages/About'
+import NotFound from './pages/NotFound'
 
 const router = createBrowserRouter([
   {
@@ -15,9 +16,10 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> },      // Home page at root URL
-      { path: ':slug', element: <DynamicPage /> },  // Dynamic pages for other routes
+      // { path: ':slug', element: <DynamicPage /> },  // Dynamic pages for other routes
       { path: '/works', element: <Works /> },
       { path: '/about', element: <About /> },
+      { path: '/*', element: <NotFound /> },
     ]
   }
 ])

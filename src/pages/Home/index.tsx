@@ -1,8 +1,9 @@
 import { motion } from "framer-motion"
 import "./Home.css"
 import { texts } from "../../Constants/texts"
+import type React from "react";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <motion.div className="home" initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}

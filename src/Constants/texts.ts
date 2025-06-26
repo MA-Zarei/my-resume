@@ -1,3 +1,4 @@
+import PlaceHolder from "../assets/icons/Pic Placeholder.svg"
 import HTMLIcon from "../assets/icons/html icon.svg";
 import CSSIcon from "../assets/icons/css icon.svg";
 import JavaScriptIcon from "../assets/icons/javascript icon.svg";
@@ -15,6 +16,13 @@ type Texts = {
     widgets: {
         availability: string,
     };
+    home:{
+        first_name: string,
+        last_name: string,
+        description: string,
+        brief: string,
+        freelance_title: string,
+    };
     about: {
         description: string,
         toolkits: [string, string][],
@@ -26,18 +34,30 @@ type Texts = {
             description: string,
             email: [string, string],
         },
-    }
+    };
     works: {
         description: string,
         sites: [string, string, string, string, string][],
-    }
+    };
+    notFound:{
+        title: string,
+        description: string,
+        btnText: string,
+    };
 };
 export const texts: Texts = {
     widgets: {
         availability: "Fully booked till further notice",
     },
+    home:{
+        first_name: "m .amin",
+        last_name: "zarei",
+        description: "web designer & front-end developer",
+        brief: "I'm MohammadAmin Zarei - a web designer and fron-end developer. I love crafting interacive, fast and optimized experiences using WordPress and React.",
+        freelance_title: "freelancer availability",
+    },
     about: {
-        description: "Hi, I’m Mohammadamin Zarei — a front-end developer, web designer, and a lifelong tech enthusiast. I’ve always been fascinated by how computers “understand” us — especially when they beat us in games!\nIn high school, I coded in C++ and joined university-level programming contests. Later, I learned C# in my engineering studies, but technology remained my true passion.\nI built my first corporate website in 2017, and that opened the door to a new world. Today, I work with HTML, CSS, WordPress, and React.js. What I love most about web design is how it connects people to technology — even those with zero technical background. It’s a digital handshake between users and systems, whether it's for shopping, reading, or exploring services.\nI'm also passionate about automation. Learning Python allowed me to write simple scripts to streamline repetitive tasks. They weren't overly complex, but they gave me a clear edge in most of my work environments.\nOutside of code, I’m still that curious person — someone who wants to understand how things actually work.",
+        description: "Hi, I’m Mohammadamin Zarei — a front-end implementer with a background in civil and railway engineering. My path into web development wasn’t traditional: I began my career in engineering, but my lifelong interest in computers and automation gradually pulled me toward technology. What started with curiosity about how games worked turned into writing C++ in high school, C# at university, and eventually Python to automate repetitive work.\nOver time, I realized that the web — especially front-end design — is where my analytical mind and visual intuition meet. I’ve been building WordPress websites for 4+ years and enjoy designing interfaces that feel purposeful, intuitive, and clear.\nI may not be a full-stack developer by training, but I’ve learned how to build practical, people-friendly solutions. Whether I’m working with WordPress, custom code, or modern frameworks like React, I try to balance structure and simplicity — creating websites that are not only usable but feel good to use.",
         toolkits: [
             ["HTML", HTMLIcon],
             ["CSS", CSSIcon],
@@ -66,6 +86,12 @@ export const texts: Texts = {
             [NamatabShop, 'namatab co. - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://namatabshop.ir'],
             [CoverZhilo, 'cover zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'under redesign', 'https://coverzhilo.ir'],
             [Zhilo, 'zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'initial version launched', 'http://zhilo.co'],
+            [PlaceHolder, 'personal portfolio website', 'UI designer | front-end developer (react)', 'live', '#'],
         ]
-    }
+    },
+    notFound:{
+        title: "page not\nfound",
+        description: "The page you are looking for doesn't exist or has been moved",
+        btnText: "go home",
+    },
 };
