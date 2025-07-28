@@ -3,7 +3,7 @@ import { Squeeze as Hamburger } from 'hamburger-react'
 import './Menu.css'
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence, easeInOut } from 'framer-motion';
-import {texts} from '../../Constants/texts.ts'
+import { texts } from '../../Constants/texts.ts'
 import Overlay from '../Overlay/Overlay.tsx';
 
 const SECTION_EXIT_DURATION = 800; // ms, adjust to match your section exit animation
@@ -103,7 +103,7 @@ const Header: React.FC = () => {
     <>
       <AnimatePresence>
         {showMenu && (
-          <Overlay onClick={()=>setIsOpen(!isOpen)} />
+          <Overlay onClick={() => setIsOpen(!isOpen)} />
         )}
       </AnimatePresence>
       <motion.div className='menu-wrapper'>
@@ -123,8 +123,8 @@ const Header: React.FC = () => {
                 height: '416px',
                 transition: {
                   backgroundColor: { duration: 0.3 },
-                  width: { delay: 0.3, duration: 0.5, ease: [0.6,0.04,0.64,0.42] },
-                  height: { delay: 0.3, duration: 0.5, ease: [0.6,0.04,0.64,0.42] },
+                  width: { delay: 0.3, duration: 0.5, ease: [0.6, 0.04, 0.64, 0.42] },
+                  height: { delay: 0.3, duration: 0.5, ease: [0.6, 0.04, 0.64, 0.42] },
                 },
               }}
               exit={{
@@ -132,8 +132,8 @@ const Header: React.FC = () => {
                 height: '48px',
                 backgroundColor: 'rgba(0,0,0,0)',
                 transition: {
-                  width: { duration: 0.5, ease: [0.6,0.04,0.64,0.42] },
-                  height: { duration: 0.5, ease: [0.6,0.04,0.64,0.42] },
+                  width: { duration: 0.5, ease: [0.6, 0.04, 0.64, 0.42] },
+                  height: { duration: 0.5, ease: [0.6, 0.04, 0.64, 0.42] },
                   backgroundColor: { delay: 0.5, duration: 0.3 },
                 },
               }}
@@ -168,11 +168,13 @@ const Header: React.FC = () => {
                       exit="exit"
                     >
                       <motion.div className='first-part' variants={itemVariants}>
-                        <a href="mailto:myemail@gmail.com" target='_blank' rel='nofollow'>myemail@gmail.com</a>
+                        <a href={`mailto:${texts.about.contact.email[1]}`} target='_blank' rel='nofollow'>
+                          {texts.about.contact.email[1]}
+                        </a>
                         <p>
                           <span>
                             My &nbsp;
-                            <a href="#">Resume</a> | <a href="#">CV</a> | <a href="https://github.com/MA-Zarei" target='_blank'>Github</a>
+                            <a href={texts.Menu.resume} download>Resume</a> | <a href={texts.Menu.github} target='_blank'>Github</a>
                           </span>
                         </p>
                       </motion.div>

@@ -10,9 +10,19 @@ import NamatabShop from "../assets/icons/works/namatabshop.webp"
 import CoverZhilo from "../assets/icons/works/coverzhilo.svg"
 import Zhilo from "../assets/icons/works/Zhilo.png"
 import ArioTV from "../assets/icons/works/ariotv.webp"
+import UAV_Publications from "../assets/icons/works/uav publication.webp"
+import Decoryar from "../assets/icons/works/decoyar.webp"
+import Webfarsi from "../assets/icons/works/webfarsi.webp"
+import KarenTabanMelal from "../assets/icons/works/karentabanmelal.webp"
+import Loopet from "../assets/icons/works/loopet.webp"
+import My_Resume from "../assets/resume/M. Amin Zarei - Resume - EN.pdf"
 
 
 type Texts = {
+    Menu:{
+        resume: string,
+        github: string,
+    };
     widgets: {
         availability: string,
     };
@@ -46,6 +56,10 @@ type Texts = {
     };
 };
 export const texts: Texts = {
+    Menu:{
+        resume: My_Resume,
+        github: "https://github.com/MA-Zarei",
+    },
     widgets: {
         availability: "Fully booked till further notice",
     },
@@ -57,7 +71,7 @@ export const texts: Texts = {
         freelance_title: "freelancer availability",
     },
     about: {
-        description: "Hi, I’m Mohammadamin Zarei — a front-end implementer with a background in civil and railway engineering. My path into web development wasn’t traditional: I began my career in engineering, but my lifelong interest in computers and automation gradually pulled me toward technology. What started with curiosity about how games worked turned into writing C++ in high school, C# at university, and eventually Python to automate repetitive work.\nOver time, I realized that the web — especially front-end design — is where my analytical mind and visual intuition meet. I’ve been building WordPress websites for 4+ years and enjoy designing interfaces that feel purposeful, intuitive, and clear.\nI may not be a full-stack developer by training, but I’ve learned how to build practical, people-friendly solutions. Whether I’m working with WordPress, custom code, or modern frameworks like React, I try to balance structure and simplicity — creating websites that are not only usable but feel good to use.",
+        description: "Hi, I’m Mohammadamin Zarei - a front-end implementer with a background in civil and railway engineering. My path into web development wasn’t traditional: I began my career in engineering, but my lifelong interest in computers and automation gradually pulled me toward technology. What started with curiosity about how games worked turned into writing C++ in high school, C# at university, and eventually Python to automate repetitive work.\nOver time, I realized that the web - especially front-end design - is where my analytical mind and visual intuition meet. I’ve been building WordPress websites for 4+ years and enjoy designing interfaces that feel purposeful, intuitive, and clear.\nI may not be a full-stack developer by training, but I’ve learned how to build practical, people-friendly solutions. Whether I’m working with WordPress, custom code, or modern frameworks like React, I try to balance structure and simplicity - creating websites that are not only usable but feel good to use.",
         toolkits: [
             ["HTML", HTMLIcon],
             ["CSS", CSSIcon],
@@ -75,17 +89,22 @@ export const texts: Texts = {
         },
         contact: {
             description: "The best way to reach me right now is via email. Whether you have a project in mind or just want to connect, feel free to get in touch:",
-            email: ["zarei[dot]mohammad[dot]am[at]gmail[dot]com", "zarei.mohammad.am@gmail.com"],
+            email: ["zarei[dot]mohammad[dot]am[at]gmail.com", "zarei.mohammad.am@gmail.com"],
         },
     },
     works: {
-        description: "This section features a curated selection of projects I’ve designed and implemented—born from real needs, shaped with user experience and aesthetics in mind. Instead of describing them in words, I’ve chosen to let each project speak for itself—just like moonlight, seen only when it touches the ground.",
+        description: "This section features a curated selection of projects I’ve designed and implemented born from real needs, shaped with user experience and aesthetics in mind. Instead of describing them in words, I’ve chosen to let each project speak for itself just like moonlight, seen only when it touches the ground.",
         sites: [
-            [ArioTV, 'ario TV - streaming platform', 'wordpress implementer', 'completed', 'https://omajshop.com'],
+            [UAV_Publications, 'UAV publications', 'wordpress implementer', 'completed', 'https://uavpub.com/'],
+            [ArioTV, 'ario TV - streaming platform', 'wordpress implementer', 'completed', 'https://ariotv.com/'],
+            [Decoryar, 'Decroyar - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://decoryar.com/'],
             [OmajShop, 'omaj food inc. - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://omajshop.com'],
+            [Webfarsi, 'Web Farsi', 'wordpress implementer', 'completed', 'http://pwgp.ir/'],
             [NamatabShop, 'namatab co. - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://namatabshop.ir'],
+            [KarenTabanMelal, 'Karen Taban Melal', 'UI design | wordpress implementer', 'completed', 'https://karentaban.com/'],
             [CoverZhilo, 'cover zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'under redesign', 'https://coverzhilo.ir'],
             [Zhilo, 'zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'initial version launched', 'http://zhilo.co'],
+            [Loopet, 'Loopet - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://loo.pet/'],
             [PlaceHolder, 'personal portfolio website', 'UI designer | front-end developer (react)', 'live', '#'],
         ]
     },

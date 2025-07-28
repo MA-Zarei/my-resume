@@ -120,9 +120,11 @@
             margin-bottom: 16px;
         }
         & .email {
-            text-decoration: none;
             color: inherit;
             font-weight: 600;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            white-space: normal;
         }
     }
 }
@@ -147,5 +149,11 @@
         & .second-right-col {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 499px) {
+    .about{
+        padding-bottom: 80px;
     }
 }

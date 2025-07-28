@@ -1,6 +1,6 @@
 .menu-wrapper {
     position: absolute;
-    top: 40px;
+    top: 2.4em;
     right: 5%;
     border-radius: 8px;
     display: flex;
@@ -19,6 +19,9 @@
 }
 
 @media (max-width: 500px) {
+    .menu-wrapper{
+        top: 1em;
+    }
     .bot-section {
         flex-direction: column !important;
         gap: 32px;

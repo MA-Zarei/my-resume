@@ -6,7 +6,7 @@
     height: fit-content;
     width: calc(98.1svw - 10%);
     box-sizing: border-box;
-    padding: 0;
+    padding: 0px 0px 80px 0px;
     * {
         padding: 0;
         margin: 0;
@@ -30,10 +30,9 @@
     }
     & .card {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         width: 560px;
-        gap: 24px;
         box-sizing: border-box;
         padding: 8px 16px;
         border: 1px solid #bebebe;
@@ -42,22 +41,32 @@
         backdrop-filter: blur(1.5px) saturate(180%);
         & .site-logo {
             max-height: 8em;
-            max-width: 25%;
+            max-width: 30%;
             object-fit: contain;
         }
         & .work-content {
             display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 24px;
+        }
+        & .text-content{
+            display: flex;
             flex-direction: column;
         }
         & .open-external {
-            width: 20%;
+            width: 100%;
             max-width: 24px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            height: 100%;
             margin-left: auto;
             padding: 0;
+            & a{
+                text-align: right;
+            }
+        }
+        & .open-icon{
+            height: 60%;
         }
         & .heading {
             font-size: 1em;
@@ -74,28 +83,12 @@
             text-transform: capitalize;
             margin-bottom: 8px;
             width: fit-content;
-            /* text-wrap: nowrap; */
         }
-        /* & a{
-            width: 24px;
-            height: 24px;
-            position: relative;
-        }
-        
-        & .work-contents{
-            display: flex;
-            flex-direction: column;
-        }
-         */
     }
 }
 
 @media (max-width: 480px) {
     .card {
         width: 100% !important;
-        & a {
-            top: -43.5% !important;
-            right: -2% !important;
-        }
     }
 }

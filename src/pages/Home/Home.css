@@ -155,10 +155,11 @@
 @media (max-width: 499px) {
     .home {
         flex-direction: column;
+        height: 78svh;
     }
     .first-name,
     .last-name {
-        font-size: 6em;
+        font-size: 5em;
         text-align: center;
     }
     .description {
@@ -166,14 +167,14 @@
     }
     .left-col {
         width: 100%;
-        padding-top: 80px;
+        padding-top: 0px;
     }
     .right-col {
         padding-left: 0%;
         width: 100%;
     }
     .brief {
-        top: 40%;
+        top: 20%;
         transform: unset;
     }
     .freelance {

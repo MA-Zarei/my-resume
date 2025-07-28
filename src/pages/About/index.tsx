@@ -43,9 +43,9 @@ const About = () => {
         <div className="second-right-col">
           <h2 className="contact-title">contact</h2>
           <p className="contact-description">{texts.about.contact.description}</p>
-          <a className="email" href={`mailto: ${texts.about.contact.email[1]}`}>
+          <p className="email">
             {texts.about.contact.email[0]}
-          </a>
+          </p>
         </div>
       </div>
     </motion.div>
