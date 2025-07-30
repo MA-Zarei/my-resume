@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 
 const redirectParam = window.location.search;
-if (redirectParam) {
+if (redirectParam.length > 1) {
   const realPath = decodeURIComponent(redirectParam.slice(1));
   window.history.replaceState(null, '', realPath);
 }
