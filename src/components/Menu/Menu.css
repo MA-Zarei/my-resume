@@ -1,5 +1,5 @@
 .menu-wrapper {
-    position: absolute;
+    position: fixed;
     top: 2.4em;
     right: 5%;
     border-radius: 8px;
@@ -45,6 +45,9 @@
 
 .menu-container {
     position: relative;
+    right: 0px;
+    bottom: 0px;
+    left: auto;
     top: -48px;
     border-radius: 8px;
     height: 100%;
@@ -55,6 +58,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding: 10% 5% 8% 5%;
+    transform-origin: right bottom;
 }
 
 .top-section {
