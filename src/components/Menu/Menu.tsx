@@ -61,6 +61,7 @@ const Header: React.FC = () => {
   const colorTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [showPadding, setShowPadding] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const [isExitingSections, setIsExitingSections] = useState<boolean>(false);
   const [hamburgerColor, setHamburgerColor] = useState<string>('#000');
@@ -69,11 +70,17 @@ const Header: React.FC = () => {
   // Handle open/close logic
   useEffect(() => {
     if (isOpen) {
+      // setTimeout(() => {
+      //   setShowPadding(true);
+      // }, SECTION_EXIT_DURATION);
       document.body.style.overflow = 'hidden';
       setHamburgerColor('#fff'); // Set to white immediately on open
       setShowMenu(true);
       setIsExitingSections(false);
     } else if (showMenu) {
+      // setTimeout(() => {
+      //   setShowPadding(false);
+      // }, SECTION_EXIT_DURATION);
       setIsExitingSections(true);
       colorTimeout.current = setTimeout(() => {
         setHamburgerColor('#000');
@@ -113,8 +120,8 @@ const Header: React.FC = () => {
         <AnimatePresence>
           {showMenu && (
             <motion.div
-              className='menu-container'
-              initial={{ backgroundColor: 'rgba(0,0,0,0)', width: '48px', height: '48px' }}
+              className={`menu-container`}
+              initial={{ backgroundColor: 'rgba(0,0,0,0)', width: '48px', height: '48px'}}
               animate={{
                 backgroundColor: 'rgba(0,0,0,1)',
                 width: '550px',
@@ -138,6 +145,7 @@ const Header: React.FC = () => {
                 },
               }}
             >
+              <div className='menu-sections'>
               <AnimatePresence>
                 {!isExitingSections && (
                   <>
@@ -195,6 +203,7 @@ const Header: React.FC = () => {
                   </>
                 )}
               </AnimatePresence>
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
