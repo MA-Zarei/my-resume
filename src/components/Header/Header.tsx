@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import isUnsupportedBrowser from '../../utils/isUnsupportedBrowser'
 import Menu from '../Menu/Menu'
 import './Header.css'
 
@@ -13,7 +14,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={scrolled ? 'glassBG' : ''}>
+    <header className={scrolled ? isUnsupportedBrowser() ? 'webKit-glassBG' : 'glassBG' : ''}>
       <div className='header-container'>
         <p className='name'>M. Amin Zarei</p>
         <Menu />

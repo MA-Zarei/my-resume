@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import isUnsupportedBrowser from "../../utils/isUnsupportedBrowser"
 import './Works.css'
 import { texts } from "../../Constants/texts"
 import OpenIcon from '../../assets/icons/open icon.svg'
@@ -13,7 +14,7 @@ const Works = () => {
       <p className="works-description">{texts.works.description}</p>
       <div className="work-cards">
         {texts.works.sites.map((para, i) => (
-          <div className="card" key={i}>
+          <div className={isUnsupportedBrowser()?'card webkitGlassCardBG':'card glassCardBG'} key={i}>
             <div className="open-external">
               <a href={para[4]} target="_blank" rel="nofollow">
                 <img src={OpenIcon} className="open-icon" />

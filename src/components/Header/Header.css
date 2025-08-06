@@ -18,6 +18,10 @@ header {
     backdrop-filter: blur(2px) saturate(180%);
 }
 
+.webKit-glassBG {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
 .header-container{
     display: flex;
     flex-direction: row;
