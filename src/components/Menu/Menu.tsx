@@ -61,7 +61,6 @@ const Header: React.FC = () => {
   const colorTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [showPadding, setShowPadding] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const [isExitingSections, setIsExitingSections] = useState<boolean>(false);
   const [hamburgerColor, setHamburgerColor] = useState<string>('#000');
@@ -70,17 +69,11 @@ const Header: React.FC = () => {
   // Handle open/close logic
   useEffect(() => {
     if (isOpen) {
-      // setTimeout(() => {
-      //   setShowPadding(true);
-      // }, SECTION_EXIT_DURATION);
       document.body.style.overflow = 'hidden';
       setHamburgerColor('#fff'); // Set to white immediately on open
       setShowMenu(true);
       setIsExitingSections(false);
     } else if (showMenu) {
-      // setTimeout(() => {
-      //   setShowPadding(false);
-      // }, SECTION_EXIT_DURATION);
       setIsExitingSections(true);
       colorTimeout.current = setTimeout(() => {
         setHamburgerColor('#000');
