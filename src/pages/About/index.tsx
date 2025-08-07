@@ -44,7 +44,10 @@ const About = () => {
           <h2 className="contact-title">contact</h2>
           <p className="contact-description">{texts.about.contact.description}</p>
           <p className="email">
-            {texts.about.contact.email[0]}
+            {atob(texts.about.contact.email[0]).split("").map((char, i) => (
+              <span key={i}>{char}</span>
+            ))
+            }
           </p>
         </div>
       </div>

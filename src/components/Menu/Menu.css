@@ -125,6 +125,9 @@
             margin: 0;
         }
     }
+    & .first-part p:first-of-type::after{
+        content: "@gmail.com";
+    }
     & .second-part {
         text-align: justify;
         display: flex;

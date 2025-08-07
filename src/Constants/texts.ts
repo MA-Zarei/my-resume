@@ -42,7 +42,7 @@ type Texts = {
         },
         contact: {
             description: string,
-            email: [string, string],
+            email: [string],
         },
     };
     works: {
@@ -89,7 +89,7 @@ export const texts: Texts = {
         },
         contact: {
             description: "The best way to reach me right now is via email. Whether you have a project in mind or just want to connect, feel free to get in touch:",
-            email: ["zarei[dot]mohammad[dot]am[at]gmail.com", "zarei.mohammad.am@gmail.com"],
+            email: ["emFyZWkubW9oYW1tYWQuYW0="],
         },
     },
     works: {

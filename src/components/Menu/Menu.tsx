@@ -169,9 +169,12 @@ const Header: React.FC = () => {
                       exit="exit"
                     >
                       <motion.div className='first-part' variants={itemVariants}>
-                        <a href={`mailto:${texts.about.contact.email[1]}`} target='_blank' rel='nofollow'>
-                          {texts.about.contact.email[1]}
-                        </a>
+                        <p>
+                          {atob(texts.about.contact.email[0]).split("").map((char,i)=>(
+                            <span key={i}>{char}</span>
+                          ))
+                          }
+                        </p>
                         <p>
                           <span>
                             My &nbsp;
