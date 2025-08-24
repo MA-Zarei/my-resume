@@ -1,4 +1,4 @@
-import PlaceHolder from "../assets/icons/Pic Placeholder.svg"
+// import PlaceHolder from "../assets/icons/Pic Placeholder.svg"
 import HTMLIcon from "../assets/icons/html icon.svg";
 import CSSIcon from "../assets/icons/css icon.svg";
 import JavaScriptIcon from "../assets/icons/javascript icon.svg";
