@@ -15,6 +15,7 @@ import Decoryar from "../assets/icons/works/decoyar.webp"
 import Webfarsi from "../assets/icons/works/webfarsi.webp"
 import KarenTabanMelal from "../assets/icons/works/karentabanmelal.webp"
 import Loopet from "../assets/icons/works/loopet.webp"
+import myLogo from "/m-amin zarei logo.svg"
 import My_Resume from "../assets/resume/M. Amin Zarei - Resume - EN.pdf"
 
 
@@ -105,7 +106,7 @@ export const texts: Texts = {
             [CoverZhilo, 'cover zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'under redesign', 'https://coverzhilo.ir'],
             [Zhilo, 'zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'initial version launched', 'http://zhilo.co'],
             [Loopet, 'Loopet - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://loo.pet/'],
-            [PlaceHolder, 'personal portfolio website', 'UI designer | front-end developer (react)', 'live', '#'],
+            [myLogo, 'personal portfolio website', 'UI designer | front-end developer (react)', 'live', '/'],
         ]
     },
     notFound:{

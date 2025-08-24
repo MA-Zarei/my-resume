@@ -32,12 +32,15 @@ header {
 }
 
 .name {
-    font-size: 2em;
-    font-weight: 400;
+    width: auto;
+    height: 60px;
 }
 
 @media (max-width: 499px) {
     header{
         padding: 0;
+    }
+    .name{
+        height: 45px;
     }
 }

@@ -27,3 +27,8 @@ main{
         padding-bottom: 0px;
     }
 }
+@media (max-height: 400px) {
+    main{
+        padding-top: 112px;
+    }
+}
