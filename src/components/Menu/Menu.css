@@ -66,7 +66,14 @@
     flex-direction: column;
     gap: 3em;
     overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+.menu-sections ::-webkit-scrollbar {
+  display: none;
+}
+
 
 @media (max-width: 500px) {
     .menu-wrapper {

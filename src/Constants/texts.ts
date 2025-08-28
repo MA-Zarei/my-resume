@@ -68,7 +68,7 @@ export const texts: Texts = {
         first_name: "m .amin",
         last_name: "zarei",
         description: "web designer & front-end developer",
-        brief: "I'm MohammadAmin Zarei - a web designer and fron-end developer. I love crafting interacive, fast and optimized experiences using WordPress and React.",
+        brief: "I'm MohammadAmin Zarei - a web designer and front-end developer. I love crafting interacive, fast and optimized experiences using WordPress and React.",
         freelance_title: "freelancer availability",
     },
     about: {

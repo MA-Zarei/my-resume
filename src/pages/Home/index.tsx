@@ -9,16 +9,16 @@ const Home: React.FC = () => {
       animate={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
       exit={{ opacity: 0, y: -20, transition: { duration: 1 } }}>
       <div className="left-col">
-        <p className="first-name">m. amin</p>
-        <p className="description">web designer & front-end developer</p>
-        <p className="last-name">zarei</p>
+        <p className="first-name">{texts.home.first_name}</p>
+        <p className="description">{texts.home.description}</p>
+        <p className="last-name">{texts.home.last_name}</p>
       </div>
       <div className="right-col">
         <p className="brief">
-          I'm MohammadAmin Zarei - a web designer and fron-end developer. I love crafting interacive, fast and optimized experiences using WordPress and React.
+          {texts.home.brief}
         </p>
         <div className="freelance">
-          <p className='first-line'>freelancer availability</p>
+          <p className='first-line'>{texts.home.freelance_title}</p>
           <div className="notice">
             <div className="pulse-wrapper">
               <div className="pulse-ring delay-0" />
