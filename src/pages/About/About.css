@@ -34,6 +34,7 @@
         }
         & .about-me {
             white-space: pre-line;
+            line-height: 1.5;
         }
     }
     & .first-right-col {

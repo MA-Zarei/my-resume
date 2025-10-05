@@ -16,18 +16,20 @@ import Webfarsi from "../assets/icons/works/webfarsi.webp"
 import KarenTabanMelal from "../assets/icons/works/karentabanmelal.webp"
 import Loopet from "../assets/icons/works/loopet.webp"
 import myLogo from "/m-amin zarei logo.svg"
+import Chenco from "../assets/icons/works/chenco.webp"
+import Abzareno from "../assets/icons/works/abzareno.webp"
 import My_Resume from "../assets/resume/M. Amin Zarei - Resume - EN.pdf"
 
 
 type Texts = {
-    Menu:{
+    Menu: {
         resume: string,
         github: string,
     };
     widgets: {
         availability: string,
     };
-    home:{
+    home: {
         first_name: string,
         last_name: string,
         description: string,
@@ -50,29 +52,29 @@ type Texts = {
         description: string,
         sites: [string, string, string, string, string][],
     };
-    notFound:{
+    notFound: {
         title: string,
         description: string,
         btnText: string,
     };
 };
 export const texts: Texts = {
-    Menu:{
+    Menu: {
         resume: My_Resume,
         github: "https://github.com/MA-Zarei",
     },
     widgets: {
-        availability: "Fully booked till further notice",
+        availability: "Fully booked till Novamber 7th",
     },
-    home:{
+    home: {
         first_name: "m .amin",
         last_name: "zarei",
-        description: "web designer & front-end developer",
-        brief: "I'm MohammadAmin Zarei - a web designer and front-end developer. I love crafting interacive, fast and optimized experiences using WordPress and React.",
+        description: "wordPress & front-end developer",
+        brief: "I’m a WordPress and Front-end Developer passionate about crafting beautiful, fast, and user-focused web experiences using modern technologies like React and custom WordPress solutions.",
         freelance_title: "freelancer availability",
     },
     about: {
-        description: "Hi, I’m Mohammadamin Zarei - a front-end implementer with a background in civil and railway engineering. My path into web development wasn’t traditional: I began my career in engineering, but my lifelong interest in computers and automation gradually pulled me toward technology. What started with curiosity about how games worked turned into writing C++ in high school, C# at university, and eventually Python to automate repetitive work.\nOver time, I realized that the web - especially front-end design - is where my analytical mind and visual intuition meet. I’ve been building WordPress websites for 4+ years and enjoy designing interfaces that feel purposeful, intuitive, and clear.\nI may not be a full-stack developer by training, but I’ve learned how to build practical, people-friendly solutions. Whether I’m working with WordPress, custom code, or modern frameworks like React, I try to balance structure and simplicity - creating websites that are not only usable but feel good to use.",
+        description: "Hi, I’m MohammadAmin Zarei, a WordPress and Front-end Developer with a background in civil and railway engineering. My journey into web development began with curiosity about how things work, which led me from experimenting with C++ in high school, to C# at university, and later Python for automating repetitive tasks. Over time, I found that the web, especially front-end development, is where analytical thinking meets visual intuition.\nFor more than four years, I have crafted WordPress websites and interfaces that guide users effortlessly, balancing clarity, performance and purpose.\nI prefer not to explain every detail in words. The value of my work is best discovered as you interact with it. Whether using WordPress, custom code, or modern frameworks like React, I aim to create experiences that speak for themselves, intuitive and satisfying to explore.",
         toolkits: [
             ["HTML", HTMLIcon],
             ["CSS", CSSIcon],
@@ -94,22 +96,24 @@ export const texts: Texts = {
         },
     },
     works: {
-        description: "This section features a curated selection of projects I’ve designed and implemented born from real needs, shaped with user experience and aesthetics in mind. Instead of describing them in words, I’ve chosen to let each project speak for itself just like moonlight, seen only when it touches the ground.",
+        description: "This section showcases a curated selection of WordPress and frontend projects I’ve designed and developed. Each was crafted to address real needs with clarity, performance and a focus on experience. I prefer not to describe them; like the moonlight, they reveal themselves only when you notice their reflection.",
         sites: [
             [UAV_Publications, 'UAV publications', 'wordpress implementer', 'completed', 'https://uavpub.com/'],
-            [ArioTV, 'ario TV - streaming platform', 'wordpress implementer', 'completed', 'https://ariotv.com/'],
+            [ArioTV, 'ario TV - streaming platform', 'custom wordPress developer', 'completed', 'https://ariotv.com/'],
             [Decoryar, 'Decroyar - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://decoryar.com/'],
-            [OmajShop, 'omaj food inc. - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://omajshop.com'],
+            [OmajShop, 'omaj food inc. - e-commerce website', 'UI design | wordPress front-end developer', 'completed', 'https://omajshop.com'],
             [Webfarsi, 'Web Farsi', 'wordpress implementer', 'completed', 'http://pwgp.ir/'],
-            [NamatabShop, 'namatab co. - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://namatabshop.ir'],
+            [NamatabShop, 'namatab co. - e-commerce website', 'UI design | wordPress front-end developer', 'completed', 'https://namatabshop.ir'],
             [KarenTabanMelal, 'Karen Taban Melal', 'UI design | wordpress implementer', 'completed', 'https://karentaban.com/'],
-            [CoverZhilo, 'cover zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'under redesign', 'https://coverzhilo.ir'],
+            [CoverZhilo, 'cover zhilo® - e-commerce website', 'Administrator | UI design | wordPress front-end developer', 'under redesign', 'https://coverzhilo.ir'],
             [Zhilo, 'zhilo® - e-commerce website', 'Administrator | UI design | wordpress implementer', 'initial version launched', 'http://zhilo.co'],
             [Loopet, 'Loopet - e-commerce website', 'UI design | wordpress implementer', 'completed', 'https://loo.pet/'],
-            [myLogo, 'personal portfolio website', 'UI designer | front-end developer (react)', 'live', '/'],
+            [Chenco, 'Chenco - e-commerce website', 'wordpress implementer', 'completed', 'https://chenco.ir/'],
+            [Abzareno, 'Abzareno - e-commerce website', 'wordpress implementer', 'completed', 'https://abzareno.com/'],
+            [myLogo, 'personal portfolio website', 'UI designer | front-end developer, react developer', 'live', '/'],
         ]
     },
-    notFound:{
+    notFound: {
         title: "page not\nfound",
         description: "The page you are looking for doesn't exist or has been moved",
         btnText: "go home",
